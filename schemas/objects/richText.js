@@ -7,22 +7,22 @@ export default {
       type: 'block',
       title: 'Block',
       styles: [
-        {title: 'H3', value: 'h3'},
-        {title: 'H4', value: 'h4'},
-        {title: 'Normal', value: 'normal'},
-        {title: 'Block quote', value: 'blockquote'},
+        { title: 'H3', value: 'h3' },
+        { title: 'H4', value: 'h4' },
+        { title: 'Normal', value: 'normal' },
+        { title: 'Block quote', value: 'blockquote' }
       ],
 
       lists: [
-        {title: 'Bullet List', value: 'bullet'},
-        {title: 'Numbered List', value: 'number'},
+        { title: 'Bullet List', value: 'bullet' },
+        { title: 'Numbered List', value: 'number' }
       ],
 
       marks: {
         decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Emphasis', value: 'em'},
-          {title: 'Inline Code', value: 'code'},
+          { title: 'Strong', value: 'strong' },
+          { title: 'Emphasis', value: 'em' },
+          { title: 'Inline Code', value: 'code' }
         ],
         annotations: [
           {
@@ -33,25 +33,26 @@ export default {
               {
                 title: 'URL',
                 name: 'href',
-                type: 'url',
+                type: 'url'
               },
               {
                 title: 'Is External Link?',
                 name: 'isExternal',
                 type: 'boolean',
                 initialValue: false,
-                description: 'This field should be true if the link points to an external URL.',
-              },
-            ],
-          },
-        ],
-      },
+                description:
+                  'This field should be true if the link points to an external URL.'
+              }
+            ]
+          }
+        ]
+      }
     },
     {
-      type: 'articleImage',
+      type: 'articleImage'
     },
     {
-      type: 'customCode',
-    },
-  ],
+      type: 'customCode'
+    }
+  ]
 }

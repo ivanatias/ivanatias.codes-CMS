@@ -1,4 +1,4 @@
-import {MdWork} from 'react-icons/md'
+import { MdWork } from 'react-icons/md'
 
 export default {
   name: 'work',
@@ -9,41 +9,41 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'overview',
       title: 'Overview',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'thumbNail',
       title: 'Thumbnail',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'text'
     },
     {
       name: 'stack',
       title: 'Stack',
       type: 'array',
-      of: [{type: 'technology'}],
+      of: [{ type: 'technology' }]
     },
     {
       name: 'projectUrl',
       title: 'Project Url',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'githubUrl',
       title: 'Github Url',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'additionalImages',
@@ -53,10 +53,10 @@ export default {
         {
           type: 'image',
           options: {
-            hotspot: true,
-          },
-        },
-      ],
+            hotspot: true
+          }
+        }
+      ]
     },
     {
       name: 'slug',
@@ -65,22 +65,22 @@ export default {
       options: {
         source: 'title',
         maxLength: 200, //
-        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
-      },
-    },
+        slugify: input => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200)
+      }
+    }
   ],
   preview: {
     select: {
       title: 'title',
       image: 'thumbNail',
-      desc: 'overview',
+      desc: 'overview'
     },
-    prepare({title, image, desc}) {
+    prepare({ title, image, desc }) {
       return {
         title,
         media: image,
-        subtitle: desc,
+        subtitle: desc
       }
-    },
-  },
+    }
+  }
 }

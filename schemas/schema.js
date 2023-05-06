@@ -10,4 +10,13 @@ import articleImage from './objects/articleImage'
 import customCode from './objects/customCode'
 import richText from './objects/richText'
 
-export default [biography, work, blog, technology, customImage, articleImage, customCode, richText]
+export default [
+  biography,
+  work,
+  blog,
+  technology,
+  customImage,
+  articleImage,
+  customCode,
+  richText
+]

@@ -1,8 +1,8 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {codeInput} from '@sanity/code-input'
-import {media} from 'sanity-plugin-media'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision'
+import { codeInput } from '@sanity/code-input'
+import { media } from 'sanity-plugin-media'
 import schemas from './schemas/schema'
 
 export default defineConfig({
@@ -10,10 +10,12 @@ export default defineConfig({
   projectId: 'uaj0umn5',
   dataset: 'production',
   plugins: [deskTool(), visionTool(), codeInput(), media()],
-  tools: (prev) => {
-    return import.meta.env.DEV === true ? prev : prev.filter((tool) => tool.name !== 'vision')
+  tools: prev => {
+    return import.meta.env.DEV === true
+      ? prev
+      : prev.filter(tool => tool.name !== 'vision')
   },
   schema: {
-    types: schemas,
-  },
+    types: schemas
+  }
 })

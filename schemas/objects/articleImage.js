@@ -1,4 +1,4 @@
-import {MdImage} from 'react-icons/md'
+import { MdImage } from 'react-icons/md'
 
 export default {
   title: 'Image',
@@ -11,18 +11,18 @@ export default {
       name: 'image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
       title: 'Alternative Text',
       name: 'altText',
-      type: 'string',
+      type: 'string'
     },
     {
       title: 'Caption Text',
       name: 'caption',
-      type: 'string',
-    },
-  ],
+      type: 'string'
+    }
+  ]
 }

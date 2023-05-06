@@ -1,4 +1,4 @@
-import {MdNote} from 'react-icons/md'
+import { MdNote } from 'react-icons/md'
 
 export default {
   title: 'Blog',
@@ -9,57 +9,57 @@ export default {
     {
       title: 'Article Title',
       name: 'articleTitle',
-      type: 'string',
+      type: 'string'
     },
     {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
       options: {
-        source: 'articleTitle',
-      },
+        source: 'articleTitle'
+      }
     },
     {
       title: 'Excerpt',
       name: 'excerpt',
-      type: 'text',
+      type: 'text'
     },
     {
       title: 'Publish Date',
       name: 'publishDate',
-      type: 'datetime',
+      type: 'datetime'
     },
     {
       title: 'Cover Image',
       name: 'coverImage',
-      type: 'customImage',
+      type: 'customImage'
     },
     {
       title: 'Article Body',
       name: 'articleBody',
-      type: 'richText',
+      type: 'richText'
     },
     {
       title: 'Social Share Image',
       name: 'socialShareImage',
       type: 'image',
       options: {
-        hotspot: true,
-      },
-    },
+        hotspot: true
+      }
+    }
   ],
   preview: {
     select: {
       title: 'articleTitle',
       image: 'socialShareImage',
-      publishDate: 'publishDate',
+      publishDate: 'publishDate'
     },
-    prepare({title, image, publishDate}) {
+    prepare({ title, image, publishDate }) {
       return {
         title,
         media: image,
-        subtitle: publishDate,
+        subtitle: publishDate
       }
-    },
-  },
+    }
+  }
 }

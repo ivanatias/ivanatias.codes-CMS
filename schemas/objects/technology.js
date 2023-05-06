@@ -6,7 +6,7 @@ export default {
     {
       name: 'tech',
       title: 'Tech',
-      type: 'string',
-    },
-  ],
+      type: 'string'
+    }
+  ]
 }

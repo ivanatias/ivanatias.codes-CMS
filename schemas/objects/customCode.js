@@ -1,4 +1,4 @@
-import {MdCode} from 'react-icons/md'
+import { MdCode } from 'react-icons/md'
 
 export default {
   title: 'Code',
@@ -13,13 +13,13 @@ export default {
       options: {
         theme: 'xcode',
         darkTheme: 'monokai',
-        withFilename: true,
-      },
-    },
+        withFilename: true
+      }
+    }
   ],
   preview: {
     select: {
-      title: 'code.code',
-    },
-  },
+      title: 'code.code'
+    }
+  }
 }

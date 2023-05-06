@@ -8,13 +8,13 @@ export default {
       name: 'image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
       title: 'Alternative Text',
       name: 'altText',
-      type: 'string',
-    },
-  ],
+      type: 'string'
+    }
+  ]
 }
