@@ -2,6 +2,7 @@
 import biography from './documents/biography'
 import work from './documents/work'
 import blog from './documents/blog'
+import npmPackage from './documents/npm-package'
 
 // Custom objects
 import technology from './objects/technology'
@@ -14,6 +15,7 @@ export default [
   biography,
   work,
   blog,
+  npmPackage,
   technology,
   customImage,
   articleImage,
