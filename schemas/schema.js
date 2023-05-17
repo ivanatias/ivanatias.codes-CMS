@@ -1,9 +1,9 @@
-//Documents
+// Documents
 import biography from './documents/biography'
 import work from './documents/work'
 import blog from './documents/blog'
 
-//Custom objects
+// Custom objects
 import technology from './objects/technology'
 import customImage from './objects/customImage'
 import articleImage from './objects/articleImage'
